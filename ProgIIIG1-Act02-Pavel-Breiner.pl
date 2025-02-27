@@ -29,5 +29,4 @@ camino(X, Y, Visitados, Ruta, CostoAcum, CostoTotal) :-
     \+ member((Z,_), Visitados),
     NuevoCosto is CostoAcum + Costo,
     camino(Z, Y, [(Z,Costo)|Visitados], Ruta, NuevoCosto, CostoTotal).
-      
 %
