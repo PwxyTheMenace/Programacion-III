@@ -2,6 +2,7 @@
 
 % ?- nodo_con_aristas(regina)         % Debería ser true
 
+
 % Hechos que representan las conexiones entre los nodos y sus costos
 arista(vancouver, edmonton, 16).
 arista(vancouver, calgary, 13).
@@ -28,4 +29,4 @@ camino(X, Y, Visitados, Ruta, CostoAcum, CostoTotal) :-
     \+ member((Z,_), Visitados),
     NuevoCosto is CostoAcum + Costo,
     camino(Z, Y, [(Z,Costo)|Visitados], Ruta, NuevoCosto, CostoTotal).
-    
+      
