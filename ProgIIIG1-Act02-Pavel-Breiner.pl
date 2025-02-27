@@ -30,3 +30,4 @@ camino(X, Y, Visitados, Ruta, CostoAcum, CostoTotal) :-
     NuevoCosto is CostoAcum + Costo,
     camino(Z, Y, [(Z,Costo)|Visitados], Ruta, NuevoCosto, CostoTotal).
       
+%
